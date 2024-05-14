@@ -31,7 +31,7 @@ const initialState = {
             name:'Drink 3L water',
             img :'C',
             Color:'#5A92CB',
-            completed:true,
+            completed:false,
         },
 
     ]
@@ -51,7 +51,8 @@ export const authSlice = createSlice({
         state.goals=updatedGoals;
     },
    setGoalsTrue:(state,action)=>{
-    const { name } = action.payload; 
+    const  name  = action.payload; 
+    console.log(name);
     const updatedGoals = state.goals.map((goal) => {
       if (goal.name === name) {
         return { ...goal, completed: true };
@@ -59,7 +60,9 @@ export const authSlice = createSlice({
         return goal;
       }
     });
+    // console.log("----------------------------");
     state.goals = updatedGoals;
+    // console.log(state.goals);
    }
   },
 });
