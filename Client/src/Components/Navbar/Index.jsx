@@ -18,7 +18,7 @@ const Navbar=()=>{
     }, [location]);
     // console.log(currentPage);
     return(
-        <div className="absolute top-[89.3%] left-[0%] flex w-[100%]   items-center justify-center bg-[#242424]">
+        <div className="fixed top-[89.3%] left-[0%] flex w-[100%]   items-center justify-center bg-[#242424]">
             <div className="container flex  flex-col  items-center cursor-pointer" onClick={()=>navigate("/")}>
             <img src={currentPage=='/'?G:G2} className='m-1'></img>
             <p className={`${currentPage === '/' ? 'text-[#D15439]' : 'text-[#B5B5B5]'} text-xs mb-1`}>page1</p>

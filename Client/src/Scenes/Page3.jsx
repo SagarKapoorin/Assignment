@@ -2,7 +2,7 @@ import Navbar from "../Components/Navbar/Index";
 const Page3=()=>{
     return(
         <>
-        <h1>Page3</h1>
+        <h1 className="bold text-white text-lg">Page3</h1>
         <Navbar/>
         </>
     )

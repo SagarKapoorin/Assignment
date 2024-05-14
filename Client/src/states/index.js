@@ -49,6 +49,7 @@ export const authSlice = createSlice({
             return { ...goal, completed: true }; 
         });
         state.goals=updatedGoals;
+        state.goals_completed=5;
     },
    setGoalsTrue:(state,action)=>{
     const  name  = action.payload; 
